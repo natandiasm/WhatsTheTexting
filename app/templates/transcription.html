@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <main class="px-3">
+        <div class="container">
+            <h1>Audio convertido com <strong>sucesso!</strong></h1>
+            <p class="lead">
+                Envie o arquivo e transcreva ele para texto,
+                aceitamos arquivos em <strong>.mp3</strong> e <strong>.ogg</strong>.
+            </p>
+            <div class="card">
+              <div class="card-header text-dark">
+                Transcrição
+              </div>
+              <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                  <p class="text-dark">{{ text['transcript'] }}</p>
+                  <footer class="blockquote-footer">
+                      Nivel de confiabilidade {{  text['confidence'] * 100 }}%
+                  </footer>
+                </blockquote>
+              </div>
+            </div>
+        </div>
+    </main>
+{% endblock %}

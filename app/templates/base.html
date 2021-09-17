@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Seus audios do whatsapp ou telegram convertidos em texto.">
+    <meta name="author" content="Natan Dias and Bootstrap contributors">
+    <title>WhatsTheTexting - Converta seu audio em texto</title>
+    <link rel="stylesheet" href="{{ url_for('appapp.static', filename='css/bootstrap.css') }}">
+</head>
+<body class="d-flex h-100 text-center text-white bg-dark">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="mb-sm-5">
+        <div>
+            <a href="/"><img width="250px" src="{{ url_for('appapp.static', filename='img/logo.png') }}" class="float-md-start mb-0"/></a>
+        </div>
+      </header>
+
+       {% block content %}{% endblock %}
+    </div>
+</body>
+</html>
