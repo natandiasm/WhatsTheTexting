@@ -27,9 +27,9 @@ class ConvertAudio:
                 audio=audio_file,  # Arquivo de audio
                 content_type=file[0],
                 # Tipo do arquivo consultar em https://cloud.ibm.com/apidocs/speech-to-text?code=python#addaudio
-                model=config.IBM_MODEL_LANGUAGE,
+                model=config.IBM_MODEL_LANGUAGE
                 # Modelo de conversão consultar em https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-models-list
-                continuous=True).get_result()
+                ).get_result()
             # Converte a resposta em DIC
             dic = json.loads(
                 json.dumps(

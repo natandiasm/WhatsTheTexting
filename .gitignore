@@ -8,6 +8,9 @@ instance/*
 .webassets-cache
 .env
 
+### Arquivos .mp3 ###
+*.mp3
+
 ### Flask.Python Stack ###
 # Byte-compiled / optimized / DLL files
 __pycache__/

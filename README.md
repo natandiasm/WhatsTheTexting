@@ -10,11 +10,23 @@ Converta audio em texto, usando o IBM Watson.
 git clone https://github.com/natandiasm/WhatsTheTexting.git
 ```
 
-2) Coloque suas credenciais no arquivo config.py. elas podem ser obtidas atraz do [IBM Watson Speech to Text](https://www.ibm.com/br-pt/cloud/watson-speech-to-text)
+2) Entre na pasta
 
-3) Dentro da pasta, execute o comando. 
 ```sh
-python run.py
+cd WhatsTheTexting
 ```
 
-4) O seu servidor funcionará no http://127.0.0.1:5000/
+3) Execute o comando 
+
+```sh
+pip install -r requirements.txt
+```
+
+4) Coloque suas credenciais diretamento no arquivo config.py ou coloque nas variaveis de ambiente (Recomendado). Elas podem ser obtidas atraz do [IBM Watson Speech to Text](https://www.ibm.com/br-pt/cloud/watson-speech-to-text).
+
+5) Dentro da pasta, execute o comando. 
+```sh
+python3 run.py
+```
+
+5) O seu servidor funcionará no http://127.0.0.1:5000/
